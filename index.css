@@ -15,5 +15,59 @@
 }
 
 body {
-    font-size: 0.875rem;
+    background: url(./images/bg-mobile.png), var(--clr-very-dark-blue);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.fylo-container {
+    width: 330px;
+    height: 200px;
+    padding: 2.5rem 2rem;
+    background-color: var(--clr-dark-blue);
+    border-radius: 0.625rem 5.5rem 0.625rem 0.625rem;
+}
+
+.fylo-container .logo {
+    width: 100%;
+    padding-bottom: 1.75rem;
+}
+
+.fylo-container .logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fylo-container .icon-menu {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.fylo-container .icon-menu li{
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    background-color: var(--clr-very-dark-blue);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
