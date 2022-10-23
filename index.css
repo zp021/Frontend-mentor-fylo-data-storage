@@ -40,6 +40,7 @@ ul {
     padding: 2.5rem 2rem;
     background-color: var(--clr-dark-blue);
     border-radius: 0.625rem 5.5rem 0.625rem 0.625rem;
+    margin-bottom: 1rem;
 }
 
 .fylo-container .logo {
@@ -70,4 +71,98 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.storage-container {
+    width: 328px;
+    height: 160px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 0.625rem;
+    padding: 2.2rem 2rem 3.5rem;
+}
+
+.storage-container .storage-info {
+    font-size: 0.875rem;
+    color: rgba(221, 219, 255, 0.7);
+}
+
+.storage-container .storage-used {
+    font-weight: 700;
+    opacity: 0.9;
+    color: white;
+}
+
+.storage-container .downloader {
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 100%;
+    background: var(--clr-gradient);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: 0.125rem solid white;
+    position: relative;
+    overflow: hidden;
+}
+
+.storage-container .storage-meter {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--clr-gradient);
+    border-radius: 0.5rem;
+}
+
+.storage-container .point {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.storage-container .storage-scale {
+    position: relative;
+}
+
+.storage-scale .storage-min abbr,
+.storage-scale .storage-max abbr {
+    font-size: 0.6rem;
+}
+
+.storage-scale .storage-min {
+    left: 0;
+}
+
+.storage-scale .storage-max {
+    right: 0;
+}
+
+.storage-scale .storage-left {
+    position: absolute;
+    z-index: 4;
+    right: 3rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    min-width: 150px;
+}
+
+.storage-scale .storage-left abbr {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    color: var(--clr-gray-blue);
+    white-space: no-wrap;
+    text-transform: uppercase;
 }
