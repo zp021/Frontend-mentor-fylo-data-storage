@@ -17,6 +17,7 @@
 body {
     background: url(./images/bg-mobile.png), var(--clr-very-dark-blue);
     background-position: top left;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-size: 14px;
@@ -35,9 +36,9 @@ ul {
 }
 
 .fylo-container {
-    width: 330px;
-    height: 200px;
-    padding: 2.5rem 2rem;
+    width: 20.625rem;
+    height: 12.5;
+    padding: 2.5rem;
     background-color: var(--clr-dark-blue);
     border-radius: 0.625rem 5.5rem 0.625rem 0.625rem;
     margin-bottom: 1rem;
@@ -73,6 +74,10 @@ ul {
     justify-content: center;
 }
 
+.fylo-container .icon-menu li:hover {
+    border: 3px solid #FF4D97;
+}
+
 .storage-container {
     width: 328px;
     height: 160px;
@@ -83,6 +88,7 @@ ul {
 
 .storage-container .storage-info {
     font-size: 0.875rem;
+    text-align: center;
     color: rgba(221, 219, 255, 0.7);
 }
 
@@ -110,8 +116,9 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
+    width: 80%;
     height: 100%;
-    background: var(--clr-gradient);
+    background: linear-gradient(to right, #FFA399, #FF4D97);
     border-radius: 0.5rem;
 }
 
@@ -129,6 +136,15 @@ ul {
     position: relative;
 }
 
+.storage-scale .storage-min,
+.storage-scale .storage-max {
+    position: absolute;
+    bottom: -0.3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
 .storage-scale .storage-min abbr,
 .storage-scale .storage-max abbr {
     font-size: 0.6rem;
@@ -144,12 +160,13 @@ ul {
 
 .storage-scale .storage-left {
     position: absolute;
-    z-index: 4;
+    top: 1.75rem;
     right: 3rem;
     background-color: white;
     color: black;
     font-weight: 700;
     font-size: 2.5rem;
+    z-index: 4;
 
     display: flex;
     align-items: center;
@@ -165,4 +182,49 @@ ul {
     color: var(--clr-gray-blue);
     white-space: no-wrap;
     text-transform: uppercase;
+}
+
+@media (min-width: 756px) {
+    body {
+        background: url(./images/bg-desktop.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 100vw 52vh;
+        background-color: var(--clr-very-dark-blue);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .fylo-container {
+        width: 21.875rem;
+        height: 12.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0.65rem 1.2rem 2.3rem 0.2rem rgb(12 18 44 / 80%);
+    }
+
+    .storage-container {
+        width: 33.875rem;
+        height: 9.813rem;
+        margin-bottom: 1rem;
+        box-shadow: 0.65rem 1.2rem 2.3rem 0.2rem rgb(12 18 44 / 80%);
+    }
+
+    .storage-container .storage-info {
+        text-align: left;
+    }
+
+    .storage-container .storage-left {
+        top: -8.85rem;
+        right: 0;
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+    }
+
+    .storage-container .point {
+        right: 5.85rem;
+    }
 }
