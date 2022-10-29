@@ -68,6 +68,7 @@ ul {
     margin-right: 1rem;
     background-color: var(--clr-very-dark-blue);
     position: relative;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -92,7 +93,13 @@ ul {
     color: rgba(221, 219, 255, 0.7);
 }
 
-.storage-container .storage-used {
+.storage-container .storage-info abbr {
+    font-weight: 700;
+    opacity: 0.9;
+    color: white;
+}
+
+.storage-container #storage-used {
     font-weight: 700;
     opacity: 0.9;
     color: white;
@@ -120,7 +127,7 @@ ul {
     height: 100%;
     background: linear-gradient(to right, #FFA399, #FF4D97);
     border-radius: 0.5rem;
-    transition: 2.3s;
+    transition: 2.2s;
 }
 
 .storage-container .point {
@@ -131,7 +138,7 @@ ul {
     height: 0.7rem;
     background: white;
     border-radius: 50%;
-    transition: 2.3s;
+    transition: 2.2s;
 }
 
 .storage-container .storage-scale {
