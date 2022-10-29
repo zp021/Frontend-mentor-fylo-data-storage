@@ -1,6 +1,6 @@
 const storageMeter = document.querySelector(".storage-meter")
 const storageLeft = document.querySelector(".storage-left")
-const storageUsed = document.getElementById("storage-used")
+const storageUsed = document.querySelector(".storage-used")
 const storageNumber = document.getElementById("left")
 const point = document.querySelector(".point")
 

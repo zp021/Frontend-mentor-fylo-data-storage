@@ -99,10 +99,11 @@ ul {
     color: white;
 }
 
-.storage-container #storage-used {
+.storage-container .storage-used {
     font-weight: 700;
     opacity: 0.9;
     color: white;
+    transition: 2.2s;
 }
 
 .storage-container .downloader {
